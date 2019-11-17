@@ -1,0 +1,55 @@
+.reference {
+    box-sizing: border-box;
+    background: lighten(rgb(236, 241, 161), 10);
+    max-width: 100vw;
+    width: 100%;
+
+    height: auto;
+    padding: 2rem;
+    .row {
+        display: flex;
+        // flex: 1fr, 1fr, 1fr;
+        flex-wrap: wrap;
+        position: relative;
+        .team {
+            justify-content: center;
+            position: relative;
+            margin: 0 auto;
+            // max-width: 300px;
+            }
+        .ref-photo {
+            border: 2px solid lighten($black, 60);
+            max-width: 400px;
+            height: auto;
+            // max-width: 30vw;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 0.5rem;
+            background: darken(rgb(6, 141, 6), 40);
+            color: whitesmoke;
+            cursor: pointer;
+            opacity: 0;
+            transition: .5s ease-in opacity;
+        }
+        .team:hover .overlay {
+            opacity: 0.8;
+            // h3 {
+            //     transform: translate3d(0, 0, 0);
+            // }
+            // span {
+            //     transform: translate3d(0, 0, 0);
+            // }
+        }
+    }
+    h3 {
+        @include font-style-h3(lighten($black, 50));
+    }
+    h1 {
+        @include font-style-h1($black);
+    }
+}

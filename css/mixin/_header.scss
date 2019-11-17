@@ -1,0 +1,35 @@
+//start for header
+header {
+    background-image: url('./image/bgHeader1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    @include item-center;
+    flex-direction: column;
+    img {
+        border: 6px solid lighten($black, 50);
+        border-radius: 50%;
+    }
+    h1 {
+        @include font-style(2.5rem);
+        font-weight: lighter;
+        color: goldenrod;
+        letter-spacing: 3px;
+        padding-left: 3rem;
+    }
+    h3 {
+        @include font-text(whitesmoke);
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 2rem;
+        padding-left: 3rem;
+        // font-family: 'Pinyon Script', cursive;
+        // font-size: 2rem;
+        // font-weight: ligher;
+        // color: whitesmoke;
+    }
+}

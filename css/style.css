@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h3 {
+  padding-left: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+#page aside {
+  background-image: url(./image/bgmenu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 2rem;
+  display: none;
+}
+
+#page aside nav ul {
+  list-style: none;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+#page aside nav ul li {
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+#page aside nav ul li a {
+  margin: 2rem;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+#page aside nav ul li a:hover {
+  color: #508787;
+}
+
+#page aside .social {
+  position: fixed;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 10px;
+}
+
+#page aside .social a {
+  text-decoration: none;
+  color: #1a1a00;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo span {
+  display: block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.logo .name {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 2.7rem;
+}
+
+.logo .surname {
+  font-size: 2.5rem;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  left: 0.5rem;
+  top: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0.1rem;
+  background-color: dimgray;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  color: #040707;
+  min-height: 100vh;
+  overflow: scroll;
+  left: 0;
+  top: 0;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  z-index: 10;
+}
+
+.open {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.container {
+  background: #c6dddd;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 75%;
+          flex: 1 1 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.class {
+  -webkit-transform: scale(1.2rem);
+          transform: scale(1.2rem);
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+header {
+  background-image: url("./image/bgHeader1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  height: 90vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header img {
+  border: 6px solid #909090;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: goldenrod;
+  letter-spacing: 3px;
+  padding-left: 3rem;
+}
+
+header h3 {
+  color: whitesmoke;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  padding-left: 3rem;
+}
+
+.about {
+  background: #f5f8cd;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.about h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.about h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.about h5 {
+  color: #434343;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.about p {
+  padding: 1rem;
+}
+
+.about .row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 2rem;
+  justify-items: left;
+}
+
+.about .row .left {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35%;
+          flex: 1 1 35%;
+}
+
+.about .row .left img {
+  max-width: 70%;
+  max-height: auto;
+  border-radius: 10%;
+}
+
+.about .row .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65%;
+          flex: 1 1 65%;
+}
+
+.about .row .right .inf {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(440px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+}
+
+.about .row .btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: solid 2px #b6b6b6;
+  background-color: #007272;
+  color: whitesmoke;
+}
+
+.about .row .btn:hover {
+  color: yellow;
+}
+
+.abilities {
+  background-color: white;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.abilities .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding-bottom: 1rem;
+}
+
+.abilities .row .col {
+  padding: 3rem;
+  max-width: 90%;
+}
+
+.abilities .row .col .skill {
+  border-bottom: 2px solid green;
+}
+
+.abilities h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.abilities h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.abilities p {
+  padding-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+.bar {
+  width: 100%;
+  background-color: #c3c3c3;
+  margin: 10px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: whitesmoke;
+}
+
+.css {
+  width: 60%;
+  background-color: #1b777e;
+}
+
+.js {
+  width: 60%;
+  background-color: #cc8400;
+}
+
+.php {
+  width: 40%;
+  background-color: #cccc00;
+}
+
+.spss {
+  width: 70%;
+  background-color: #046600;
+}
+
+.nvivo {
+  width: 80%;
+  background-color: #665300;
+}
+
+.management {
+  width: 80%;
+  background-color: rgba(204, 65, 0, 0.726);
+}
+
+.training {
+  width: 90%;
+  background-color: #807e00;
+}
+
+.scale {
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.scale p {
+  padding-right: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #3d6767;
+}
+
+.reference {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f5f8cd;
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.reference .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.reference .row .team {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.reference .row .ref-photo {
+  border: 2px solid darkgray;
+  max-width: 400px;
+  height: auto;
+}
+
+.reference .row .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  background: black;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: .5s ease-in opacity;
+  transition: .5s ease-in opacity;
+}
+
+.reference .row .team:hover .overlay {
+  opacity: 0.8;
+}
+
+.reference h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.reference h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.contactMe {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.contactMe h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.contactMe h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.contactMe .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.contactMe h5 {
+  color: darkcyan;
+  color: #005858;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.contactMe .left p {
+  margin: 2rem;
+  color: #1d2410;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: 'Stardos Stencil', cursive;
+}
+
+.contactMe .right {
+  max-width: 100%;
+}
+
+.contactMe .right .form-control {
+  width: 80%;
+  border: none;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: darkgray solid 1px;
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.contactMe input:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.contactMe textarea {
+  width: 100%;
+}
+
+.contactMe textarea:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: solid 2px #b6b6b6;
+  background-color: #005858;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  color: yellow;
+}
+
+footer {
+  background-image: url("./image/bgFooter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+  color: goldenrod;
+}
+
+footer .row .col {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+footer .row .col p {
+  padding: 1rem;
+}
+
+footer .row .col a {
+  color: goldenrod;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+}
+
+footer h1 {
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase;
+  font-size: gold;
+  font-size: 1.5rem;
+}
+
+footer h3 {
+  color: goldenrod;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+@media screen and (max-width: 600px) {
+  #page {
+    border: 2px solid hotpink;
+  }
+  aside {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
