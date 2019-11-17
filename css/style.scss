@@ -163,14 +163,21 @@ $yellow: rgb(250, 214, 10);
     aside{
         display: none;
     }
-    // .row{
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
+    .row{
+   
+    object-fit: cover;
         
-    // }
+}
     // .container {
     //     width: 70%;
     // }
+}
+@media screen and (max-width: 350px) {
+    #page {
+        border: 5px solid yellow;
+    }
+    aside{
+        display: none;
+    }
+    
 }

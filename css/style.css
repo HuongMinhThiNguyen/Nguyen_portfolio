@@ -667,5 +667,18 @@ footer h3 {
   aside {
     display: none;
   }
+  .row {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #page {
+    border: 5px solid yellow;
+  }
+  aside {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
