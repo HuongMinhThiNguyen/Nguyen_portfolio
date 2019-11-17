@@ -262,6 +262,8 @@ header h3 {
 
 .about p {
   padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about .row {
