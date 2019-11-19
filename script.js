@@ -62,5 +62,8 @@ $('#btn-send').click(function(){
 
 })
     // $().addClass(className);
+    // $("#cv").on("click", function() {
+    //     $(this).
+    // }
 
 });
