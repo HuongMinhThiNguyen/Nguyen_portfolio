@@ -13,7 +13,6 @@ header {
     img {
         border: 6px solid lighten($black, 50);
         border-radius: 50%;
-        
     }
     h1 {
         @include font-style(2.5rem);
