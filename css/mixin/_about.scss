@@ -17,15 +17,15 @@
         @include font-text(lighten($black, 20));
         line-height: 2rem;
     }
-    
     p {
         padding: 1rem;
         flex-wrap: wrap;
+        line-height: 2rem;
+        font-size: 1.2rem;
         // margin: 0 auto;
     }
     .row {
         box-sizing: border-box;
-        
         display: flex;
         // //flex-direction: column;
         padding-right: 2rem;
@@ -35,13 +35,11 @@
             padding: 1rem;
             flex: 1 1 35%;
             //background-color: red;
-            img{
+            img {
                 max-width: 70%;
                 max-height: auto;
-                border-radius: 10%;    
+                border-radius: 10%;
             }
-            
-        
         }
         .right {
             flex: 1 1 65%;
@@ -49,7 +47,6 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
             }
-           
             //background-color: green;
             // p{
             //     display: flex;
