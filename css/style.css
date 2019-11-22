@@ -164,7 +164,7 @@ html {
 
 header {
   background-image: url("./image/bgHeader1.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   -ms-flex-wrap: wrap;
@@ -189,6 +189,8 @@ header {
 
 header img {
   border: 6px solid #909090;
+  width: 400px;
+  height: auto;
   border-radius: 50%;
 }
 

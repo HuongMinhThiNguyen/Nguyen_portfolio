@@ -1,7 +1,7 @@
 //start for header
 header {
     background-image: url('./image/bgHeader1.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     flex-wrap: wrap;
@@ -12,6 +12,8 @@ header {
     flex-direction: column;
     img {
         border: 6px solid lighten($black, 50);
+        width: 400px;
+        height: auto;
         border-radius: 50%;
     }
     h1 {
