@@ -43,7 +43,7 @@
         }
         .right {
             flex: 1 1 65%;
-            overflow: auto;
+            // overflow: auto;
             .inf {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
