@@ -3,7 +3,6 @@
     background: lighten(rgb(236, 241, 161), 10);
     max-width: 100vw;
     width: 100%;
-
     height: auto;
     padding: 2rem;
     .row {
@@ -11,12 +10,13 @@
         // flex: 1fr, 1fr, 1fr;
         flex-wrap: wrap;
         position: relative;
+        overflow: auto;
         .team {
             justify-content: center;
             position: relative;
             margin: 0 auto;
             // max-width: 300px;
-            }
+        }
         .ref-photo {
             border: 2px solid lighten($black, 60);
             max-width: 400px;

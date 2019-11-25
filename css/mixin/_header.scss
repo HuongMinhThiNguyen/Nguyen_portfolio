@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     img {
         border: 6px solid lighten($black, 50);
-        width: 400px;
+        width: 300px;
         height: auto;
         border-radius: 50%;
     }
@@ -22,6 +22,7 @@ header {
         color: goldenrod;
         letter-spacing: 3px;
         padding-left: 3rem;
+        overflow: auto;
     }
     h3 {
         @include font-text(whitesmoke);
@@ -29,6 +30,7 @@ header {
         font-weight: lighter;
         line-height: 2rem;
         padding-left: 3rem;
+        overflow: auto;
         // font-family: 'Pinyon Script', cursive;
         // font-size: 2rem;
         // font-weight: ligher;
