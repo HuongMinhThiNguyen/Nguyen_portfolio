@@ -185,6 +185,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 header img {
@@ -306,6 +307,7 @@ header h3 {
   display: grid;
   -ms-grid-columns: (minmax(440px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  overflow: hidden;
 }
 
 .about .row .btn {
@@ -396,6 +398,7 @@ header h3 {
   padding-top: 1px;
   padding-bottom: 1px;
   color: whitesmoke;
+  overflow: auto;
 }
 
 .css {
@@ -524,6 +527,7 @@ header h3 {
   height: auto;
   background-color: white;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 .contactMe h3 {
