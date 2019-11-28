@@ -4,6 +4,7 @@
             height: auto;
             background-color: lighten(blue, 50);
             padding: 1.5rem;
+            overflow: hidden;
             h3 {
                 @include font-style-h3(lighten($black, 50));
             }
@@ -46,30 +47,31 @@
                     font-family: 'Stardos Stencil', cursive;
                     font-size: 1rem;
                     font-style: oblique;
-                    font-weight: bold;                    }
-                }
-                input:focus {
-                    border-bottom: 2px solid black;
-                    outline: none;
-                }
-                textarea {
-                    width: 100%;
-                }
-                textarea:focus {
-                    border-bottom: 2px solid black;
-                    outline: none;
+                    font-weight: bold;
                 }
             }
-            .btn {
-                cursor: pointer;
-                padding: 1rem;
-                margin: 1.5rem;
-                @include font-style(1rem);
-                border: solid 2px lighten($black, 65);
-                background-color: (darken( darkcyan, 10));
-                color: whitesmoke;
-                &:hover {
-                    color: yellow;
-                }
+            input:focus {
+                border-bottom: 2px solid black;
+                outline: none;
             }
+            textarea {
+                width: 100%;
+            }
+            textarea:focus {
+                border-bottom: 2px solid black;
+                outline: none;
+            }
+        }
         
+        .btn {
+            cursor: pointer;
+            padding: 1rem;
+            margin: 1.5rem;
+            @include font-style(1rem);
+            border: solid 2px lighten($black, 65);
+            background-color: (darken( darkcyan, 10));
+            color: whitesmoke;
+            &:hover {
+                color: yellow;
+            }
+        }

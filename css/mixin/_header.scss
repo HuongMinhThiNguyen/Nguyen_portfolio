@@ -10,6 +10,7 @@ header {
     margin: 0 auto;
     @include item-center;
     flex-direction: column;
+    overflow: hidden;
     img {
         border: 6px solid lighten($black, 50);
         width: 300px;
