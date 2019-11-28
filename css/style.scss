@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
-h1, h3 {
+h1,
+h3 {
     padding-left: 2rem;
 }
+
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 @import './mixin/mixin.scss';
@@ -58,7 +60,6 @@ $yellow: rgb(250, 214, 10);
         .social {
             position: fixed;
             text-align: center;
-            
             position: absolute;
             margin: 0 auto;
             bottom: 10px;
@@ -160,18 +161,17 @@ $yellow: rgb(250, 214, 10);
     #page {
         border: 2px solid hotpink;
     }
-    aside{
+    aside {
         display: none;
     }
-    .row{
-   
-    object-fit: cover;
-        
-}
+    .row {
+        object-fit: cover;
+    }
     // .container {
     //     width: 70%;
     // }
 }
+
 // @media screen and (max-width: 350px) {
 //     #page {
 //         border: 5px solid yellow;
@@ -179,5 +179,4 @@ $yellow: rgb(250, 214, 10);
 //     aside{
 //         display: none;
 //     }
-    
 // }

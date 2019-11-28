@@ -5,12 +5,14 @@
           box-sizing: border-box;
 }
 
-h1, h3 {
+h1,
+h3 {
   padding-left: 2rem;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 #page {
