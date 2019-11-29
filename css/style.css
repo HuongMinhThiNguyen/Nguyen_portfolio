@@ -12,7 +12,6 @@ h3 {
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 #page {
@@ -187,7 +186,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 header img {
@@ -529,7 +527,6 @@ header h3 {
   height: auto;
   background-color: white;
   padding: 1.5rem;
-  overflow: hidden;
 }
 
 .contactMe h3 {
