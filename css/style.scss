@@ -17,6 +17,7 @@ html {
 $black: #101010;
 $pink: pink;
 $blue: rgb(166, 202, 202);
+$green: rgb(0, 173, 136);
 $yellow: rgb(250, 214, 10);
 #page {
     display: flex;
@@ -128,7 +129,7 @@ $yellow: rgb(250, 214, 10);
 
 // start for main page
 .container {
-    background: lighten($blue, 10);
+    background: darken($green, 10);
     flex: 1 1 75%;
     @include item-center;
     flex-direction: column;
