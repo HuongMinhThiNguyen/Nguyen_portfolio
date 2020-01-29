@@ -164,8 +164,8 @@ html {
 }
 
 header {
-  background-image: url("./image/bgHeader1.jpg");
-  background-size: 100%;
+  background-image: url("/css/image/bgSession.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   -ms-flex-wrap: wrap;
