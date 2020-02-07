@@ -1,69 +1,494 @@
-$(document).ready(function() {
-    // my code goes here:
-    $(".hamburger a").on("click", function() {
-        // do stuff
-        $(".mobile-menu").toggleClass("open");
-        if ($(".mobile-menu").hasClass("open")) {
-            $("aside").css("display","block");
-            $widthMenu = $(".mobile-menu").width();
-            $("main").css("transform", "translateX(260px)");
-            
-        } else {
-            $("main").css("transform", "");
-        }
-        // $(this).animate({ 'zoom': 1.3 }, 400);
+< !DOCTYPE html >
+    <
+    html lang = "en" >
 
-        // $(".mobile-menu").fadeToggle(1000);
+    <
+    head >
+    <
+    meta charset = "UTF-8" >
+    <
+    meta name = "viewport"
+content = "width=device-width, initial-scale=1.0" >
+    <
+    meta http - equiv = "X-UA-Compatible"
+content = "ie=edge" >
+    <
+    link rel = "stylesheet"
+href = "./css/style.css" >
+    <
+    link href = "https://fonts.googleapis.com/css?family=Satisfy&display=swap"
+rel = "stylesheet" >
+    <
+    link href = "https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap"
+rel = "stylesheet" >
+    <
+    link href = "https://fonts.googleapis.com/css?family=Pinyon+Script|Stardos+Stencil&display=swap"
+rel = "stylesheet" >
+    <
+    link href = "https://fonts.googleapis.com/css?family=Courgette&display=swap"
+rel = "stylesheet" >
+    <
+    link href = "https://fonts.googleapis.com/css?family=Oswald&display=swap"
+rel = "stylesheet" >
+    <
+    link rel = "stylesheet"
+href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" / >
+    <
+    link rel = "shortcut icon"
+href = "./css/image/favicon.ico"
+type = "image/x-icon"
+style = "border-radius: 50%;" >
 
-    });
-    // make the skill bar bigger when the mouse moves 
-    $(".abilities").mouseenter(function() {
+    <
+    title > Huong T.M.Nguyen < /title> <
+    /head>
 
-        $('.scale').css('transform', 'scale(1.2)');
+<
+body >
+    <
+    div class = "hamburger" >
+    <
+    a href = "#" >
+    <
+    i class = "fas fa-bars" > < /i> <
+    /a> <
+    /div>
 
-    });
+<
+div id = "page" >
+    <!-- start sidebar here -->
+    <
+    aside class = "sidebar mobile-menu open" >
+    <
+    div class = "logo" >
+    <
+    span class = "name" > Huong T.M < /span> <
+    span class = "surname" > Nguyen < /span> <
+    /div>
 
-    $(".abilities").mouseleave(function() {
+<
+nav >
+    <
+    ul class = "menu" >
+    <
+    li >
+    <
+    a href = "#header" > home < /a> <
+    /li> <
+    li >
+    <
+    a href = "#about" > about < /a> <
+    /li> <
+    li >
+    <
+    a href = "#skills" > skills < /a> <
+    /li> <
+    li >
+    <
+    a href = "#reference" > Portfolio < /a> <
+    /li> <
+    li >
+    <
+    a href = "#contact" > contact < /a> <
+    /li> <
+    /ul> <
+    /nav>
 
-        $('.scale').css('transform', 'scale(1.0)');
+<
+div class = "social" >
+    <
+    p >
+    <
+    a href = "https://www.facebook.com/huong.nguyenminh.75" >
+    <
+    i class = "fab fa-facebook" > < /i> <
+    /a>
+
+<
+a href = "https://twitter.com/?lang=en" >
+    <
+    i class = "fab fa-twitter" > < /i> <
+    /a>
+
+<
+a href = "https://www.linkedin.com/in/huong-nguyen-4a87375b/" >
+    <
+    i class = "fab fa-linkedin-in" > < /i> <
+    /a>
+
+<
+a href = "https://www.adobe.com/products/photoshop-camera.html" >
+    <
+    i class = "fas fa-camera" > < /i> <
+    /a> <
+    /p> <
+    p class = "copyright" > ©2019 All rights reserved <
+    /p> <
+    /div>
+
+<
+/aside>
+
+<!-- start main page here -->
+<
+main class = "container" >
+    <!-- start header here -->
+    <
+    header id = "header" >
+    <
+    img src = "./css/image/photoEen.jpg"
+class = "portrait" >
+
+    <
+    h1 >
+    Huong T.M.Nguyen <
+    /h1> <
+    h3 >
+    I am on the way to < span id = "transform" > become a Web Developer < /span> <
+    /h3>
 
 
-    });
-
-    // make the phrase in the header changes its color when the mouse move in/out 
-    $('header').mouseenter(function() {
-        // alert('move')
-        $("aside").css("display","block");
-        $('header h1').css('color', 'white');
-        $('header h3 span').css('color', 'goldenrod');
-
-    });
-    $('header').mouseleave(function() {
-        // alert('move')
-        
-        $('header h1').css('color', 'goldenrod');
-        $('header h3 span').css('color', 'white');
-        // $(this).addClass(".class");
-
-    });
+<
+/header>
 
 
-    // zoom in/out an image
+<!-- start section About Me here -->
+<
+section class = "about"
+id = "about" >
+    <
+    h3 > information < /h3> <
+    h1 > about me < /h1> <
+    div class = "row" >
+    <
+    div class = "left" >
+    <
+    img src = "./css/image/photo2.jpg"
+class = "portrait" >
 
-    $('#header img').hover(
-        function() {
-            $(this).animate({ 'zoom': 1.3 }, 400);
-        },
-        function() {
-            $(this).animate({ 'zoom': 1 }, 400);
-        });
-$('#btn-send').click(function(){
-    alert ("I have got your message. Thank you!")
+    <
+    /div> <
+    div class = "right" >
+    <
+    h3 > who I am < /h3> <
+    h5 >
+    <
+    strong > I am Huong T.M.Nguyen, < span > on the way to become a Web Developer < /span></strong >
+    <
+    /h5> <
+    p >
+    Before stepping in the ICT world, I have been worked as a social researcher in Vietnam and some other countries
+for more than 20 years.To settle down in Belgium, I decide to change my career and get a lot of inspirations from crafting beautiful and interactive
+websites.I realize that passion and hard - working make me to be a fast learner in the new arena of web development. <
+    /p>
 
-})
-    // $().addClass(className);
-    // $("#cv").on("click", function() {
-    //     $(this).
-    // }
+<
+div class = "inf" >
+    <
+    div class = "inf-col" >
 
-});
+
+    <
+    p >
+    <
+    strong > Website: < /strong> <a href="https:/ / huongminhthinguyen.github.io / Nguyen_portfolio / ">Nguyen's
+portfolio < /a> <
+    /p> <
+    p >
+    <
+    strong > Phone: < /strong> +32 497 46 46 64 <
+    /p> <
+    /div> <
+    div class = "inf-col" >
+    <
+    p >
+    <
+    strong > Degree: < /strong> PhD in Sociology <
+    /p>
+
+<
+p >
+    <
+    strong > Mail: < /strong>mhuong_1999@yahoo.com <
+    /p> <
+    p >
+    <
+    strong > LinkedIn: < /strong> https:/ / be.linkedin.com /
+    <
+    /p> <
+    /div> <
+    /div> <
+    div class = "row" >
+    <
+    button type = "button"
+class = "btn btn-secondary" > Hire me < /button> <
+    a href = "./css/image/Huong_NGuyen_cv.pdf"
+download > < button type = "button"
+class = "btn btn-secondary"
+id = "cv" >
+    Download CV < /button></a >
+    <
+    /div> <
+    /div>
+
+<
+/div> <
+/section>
+
+
+
+<!-- start section Abilities here -->
+
+
+<
+section class = "abilities"
+id = "skills" >
+    <
+    h3 > abilities < /h3> <
+    h1 > Skills < /h1> <
+    div class = "row" >
+    <
+    div class = "col" >
+    <
+    p > This porfolio is my first pilot project in web development, using HTML, SASS and Javascript. <
+    /p> <
+    /div> <
+    div class = "col scale" >
+    <
+    p > HTML & CSS < /p> <
+    div class = "bar" >
+    <
+    div class = "skills css" > 60 % < /div> <
+    /div>
+
+<
+p > Javascript, JQuery < /p> <
+    div class = "bar" >
+    <
+    div class = "skills js" > 60 % < /div> <
+    /div>
+
+<
+p > MySQL, Python, PHP, ... < /p> <
+    div class = "bar" >
+    <
+    div class = "skills php" > 40 % < /div> <
+    /div>
+
+<
+p > Quantitative Data analysis(SPSS) < /p> <
+    div class = "bar" >
+    <
+    div class = "skills spss" > 75 % < /div> <
+    /div>
+
+<
+p > Qualitative data analysis(Nvivo) < /p> <
+    div class = "bar" >
+    <
+    div class = "skills nvivo" > 80 % < /div> <
+    /div>
+
+<
+p > Project management < /p> <
+    div class = "bar" >
+    <
+    div class = "skills management" > 80 % < /div> <
+    /div>
+
+<
+p > Training skills < /p> <
+    div class = "bar" >
+    <
+    div class = "skills training" > 90 % < /div> <
+    /div> <
+    /div>
+
+
+<
+/div>
+
+
+<
+/section>
+
+<!-- start section References -->
+
+<
+section class = "reference"
+id = "reference" >
+    <
+    h3 > Portfolio < /h3> <
+    h1 > Coming projects < /h1> <
+    div class = "row" >
+    <
+    div class = "team" >
+    <
+    img class = "ref-photo"
+src = "./css/image/photo3_4.jpg"
+alt = "portrait" >
+    <
+    div class = "overlay" >
+    <
+    h3 > shopping project < /h3> <
+    span > using bootstrap, scss and jquery < /span> <
+    a href = "javascript:void(0)"
+onclick = "goToURL(www.huongminhthinguyen.github.io/Phanmode-Web/mainpage.html); return false;" > < /a> <
+    /div> <
+    /div> <
+    div class = "team" >
+    <
+    img class = "ref-photo"
+src = "./css/image/photo3_1.jpg"
+alt = "portrait" >
+    <
+    div class = "overlay" >
+    <
+    h3 > Name < /h3> <
+    span > contact inf: title, email address, ... < /span> <
+    /div> <
+    /div> <
+    div class = "team" >
+    <
+    img class = "ref-photo"
+src = "./css/image/photo3_3.jpg"
+alt = "portrait" >
+    <
+    div class = "overlay" >
+    <
+    h3 > Name < /h3> <
+    span > contact inf: title, email address, ... < /span> <
+    /div> <
+    /div> <
+    /div>
+
+<
+/section>
+
+<!-- start section Contact -->
+
+<
+section class = "contactMe"
+id = "contact" >
+    <
+    h3 > Location < /h3> <
+    h1 > Contact Me < /h1> <
+    div class = "row" >
+    <!-- Contact Infor -->
+    <
+    div class = "col left" >
+    <
+    h5 > Nguyen T.M.Huong < /h5> <
+    p > < strong > PHONE: < /strong> +32 497 46 46 64</p >
+    <
+    p > < strong > EMAIL: < /strong> mhuong_1999@yahoo.com</p >
+    <
+    p > < strong > ADDRESS: < /strong> <br> Molenbergstraat 72, <
+    br > 9340 Lede <
+    br > Belgium < /p> <
+    /div>
+    <!-- contact form -->
+    <
+    div class = "col right" >
+    <
+    h5 > Get in touch < /h5> <
+    form method = "post"
+action = "https://formspree.io/mgeezwnn" >
+    <
+    div class = "row" >
+    <
+    div class = "form-group" >
+    <
+    input type = "text"
+class = "form-control"
+placeholder = "Your Name"
+name = "name" >
+    <
+    /div> <
+    div class = "form-group" >
+    <
+    input type = "text"
+class = "form-control"
+placeholder = "Your Email"
+name = "replyto" >
+    <
+    /div> <
+    /div> <
+    div class = "form-group" >
+    <
+    textarea name = "message"
+id = "message"
+cols = "30"
+rows = "5"
+class = "form-control"
+placeholder = "Message" > < /textarea> <
+    /div> <
+    div class = "form-group" >
+    <
+    input class = "btn"
+type = "submit"
+value = "Send Me"
+id = "btn-send" >
+    <
+    /div>
+
+<
+/form> <
+/div> <
+/div> <
+/section>
+
+<!-- start section Footer here -->
+<
+footer >
+    <
+    div class = "row" >
+    <
+    div class = "col" > ©2019 All rights reserved < /div> <
+    div class = "col" >
+    <
+    h1 > Huong T.M.Nguyen < /h1> <
+    h3 > Junior Web developer < /h3> <
+    /div> <
+    div class = "col" >
+    <
+    p >
+    <
+    a href = "www.facebook.com" >
+    <
+    i class = "fab fa-facebook" > < /i> <
+    /a>
+
+<
+a href = "https://twitter.com/?lang=en" >
+    <
+    i class = "fab fa-twitter" > < /i> <
+    /a>
+
+<
+a href = "https://be.linkedin.com/" >
+    <
+    i class = "fab fa-linkedin-in" > < /i> <
+    /a>
+
+<
+a href = "https://www.adobe.com/products/photoshop-camera.html" >
+    <
+    i class = "fas fa-camera" > < /i> <
+    /a> <
+    /p> <
+    /div> <
+    /div> <
+    /footer> <
+    /main> <
+    /div>
+
+
+
+<
+script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" > < /script> <
+    script src = "script.js" > < /script> <
+    /body>
+
+<
+/html>
